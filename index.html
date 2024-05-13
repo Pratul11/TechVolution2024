@@ -1,0 +1,881 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>TechVolution 2024</title>
+</head>
+
+<body>
+    <nav class="navbar sticky-top navbar-expand-lg" data-bs-theme="dark"
+        style="background-color: #090909; background-color: rgba(0, 0, 0, 0.95);">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="./assets/png-logo.png" alt="Logo" width="180" height="54"
+                    class="d-inline-block align-text-top">
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+                aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#features">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#testimonials">Testimonials</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#event">Events</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#gallery1">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#timeline">Timeline</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#form">Registration</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#prizes">Prizes</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <button class="btn" type="submit">Register Now</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <div class="home-container">
+        <div id="video-bg-elem">
+        </div>
+        <!-- <video id="video-bg-elem" preload="auto" autoplay loop muted>
+            <source src="./assets/New Project - Made with Clipchamp.mp4" type="video/mp4">
+        </video> -->
+        <div class="content">
+            <h1>TechVolution 2024<br>Shaping Tomorrow,<br>Today</h1>
+            <button type="button" class="btn btn-lg mt-3">Register Now</button>
+        </div>
+    </div>
+    <div id="about">
+        <div class="about-container">
+            <div class="section-heading">ABOUT</div>
+            <div class="about-content-container">
+                <div class="leftside-container">
+                    <div class="left-container-1">
+                        <div class="cogni24-text">Innovative Exhibitions</div>
+                        <div class="left-sub-container-1">
+                            <div class="vertical-line-left"></div>
+                            <div class="left-text-container-1">Experience hands-on demonstrations of the latest
+                                technologies spanning artificial
+                                intelligence, robotics, virtual reality, augmented reality, blockchain, quantum
+                                computing, and more.</div>
+                        </div>
+                    </div>
+                    <div class="left-container-2">
+                        <div class="left-sub-container-2">
+                            <div class="head-arrow">
+                                <img src="./assets/arrow.png" alt="arrow">
+                            </div>
+                            <div class="text-container-2">
+                                <div class="events-heading">Networking Opportunities</div>
+                                <div class="events-text-container">Connect with like-minded professionals,
+                                    entrepreneurs, investors, and enthusiasts
+                                    through structured networking sessions, casual meetups, and exclusive VIP events.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="left-container-3">
+                        <div class="left-sub-container-2">
+                            <div class="head-arrow">
+                                <img src="./assets/arrow.png" alt="arrow">
+                            </div>
+                            <div class="text-container-2">
+                                <div class="events-heading">Expert Panels and Talks</div>
+                                <div class="events-text-container">Engage with industry pioneers and experts through
+                                    insightful panel discussions,
+                                    TED-style talks, and fireside chats covering diverse topics such as the future of
+                                    work, sustainable technology,
+                                    ethical AI, and space exploration.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="middle-image-container">
+                    <img src="./assets/robot_spy.png" alt="Robot image">
+                </div>
+                <div class="rightside-container">
+                    <div class="right-container-1">
+                        <div class="Quantistico-text">Interactive Workshops</div>
+                        <div class="right-sub-container-1">
+                            <div class="vertical-line-left"
+                                style="margin-right: 1rem; opacity: .4; background: #feb43c; width: 20px; border-radius: 10px;">
+                            </div>
+                            <div class="right-text-container-1">Dive deep into emerging technologies with interactive
+                                workshops led by industry experts.
+                                Learn new skills, gain practical insights, and explore the possibilities of tomorrow's
+                                tech landscape.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="right-container-2">
+                        <div class="left-sub-container-2">
+                            <div class="head-arrow">
+                                <img src="./assets/arrow.png" alt="arrow">
+                            </div>
+                            <div class="text-container-2">
+                                <div class="events-heading">Startup Showcases</div>
+                                <div class="events-text-container">Discover groundbreaking startups and disruptive
+                                    innovations at the forefront of technology.
+                                    Meet the founders, network with investors, and witness the next big thing in action.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="right-container-3">
+                        <div class="left-sub-container-2">
+                            <div class="head-arrow">
+                                <img src="./assets/arrow.png" alt="arrow">
+                            </div>
+                            <div class="text-container-2">
+
+                                <div class="events-heading">Events</div>
+                                <div class="events-text-container">Experience the power of creativity and inspiration at
+                                    our events. We bring together
+                                    artists, thinkers, and innovators from across different fields to spark new ideas
+                                    and share their stories. Whether you're a creative professional or just looking to
+                                    be inspired, our events are the perfect place to find your next big idea.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="features">
+        <div class="section-heading">FEATURES</div>
+        <div class="features-container">
+            <div class="left-feature">
+                <h2>What makes us different</h2>
+                <p class="heading-text">Discover a wide range of advanced technologies, from wearable gadgets to
+                    powerful AI solutions, all
+                    designed to shape the future at TechVolution 2024.</p>
+                <!-- Virtual reality -->
+                <div class="content-feature">
+                    <i class="fa-solid fa-vr-cardboard"></i>
+                    <div class="main-content-feature">
+                        <p class="head-feature">Virtual Reality Experiences</p>
+                        <p class="text-feature">Offer immersive VR experiences showcasing future tech innovations.</p>
+                    </div>
+                </div>
+                <div class="content-feature">
+                    <i class="fa-solid fa-chalkboard-user"></i>
+                    <div class="main-content-feature">
+                        <p class="head-feature">Interactive Workshops</p>
+                        <p class="text-feature">Engage attendees with hands-on workshops on cutting-edge technologies
+                            like AI, blockchain, etc.
+                        </p>
+                    </div>
+                </div>
+                <div class="content-feature">
+                    <i class="fa-sharp fa-solid fa-user-tie" style="margin-right: 39px;"></i>
+                    <div class="main-content-feature">
+                        <p class="head-feature">Expert Panels</p>
+                        <p class="text-feature">Host panels with industry experts discussing trends and predictions in
+                            technology.
+                        </p>
+                    </div>
+                </div>
+                <div class="content-feature">
+                    <i class="fa-solid fa-desktop" style="margin-right: 33px;"></i>
+                    <div class="main-content-feature">
+                        <p class="head-feature">Live Demonstrations</p>
+                        <p class="text-feature">Feature live demonstrations of futuristic gadgets, robots, or
+                            prototypes.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="right-feature">
+                <div class="content-feature">
+                    <i class="fa-sharp fa-solid fa-network-wired"></i>
+                    <div class="main-content-feature">
+                        <p class="head-feature">Networking Opportunities</p>
+                        <p class="text-feature">Provide virtual networking sessions for attendees to connect with peers
+                            and industry professionals.
+                        </p>
+                    </div>
+                </div>
+                <div class="content-feature">
+                    <i class="fa-solid fa-building" style="margin-right: 39px;"></i>
+                    <div class="main-content-feature">
+                        <p class="head-feature">Startup Showcase</p>
+                        <p class="text-feature">Highlight startups working on groundbreaking innovations in tech.</p>
+                    </div>
+                </div>
+                <div class="content-feature">
+                    <i class="fa-solid fa-microphone" style="margin-right: 40px;"></i>
+                    <div class="main-content-feature">
+                        <p class="head-feature">Tech Talks</p>
+                        <p class="text-feature">Present keynote speeches and talks by thought leaders on emerging
+                            technologies and their impact on society.
+                        </p>
+                    </div>
+                </div>
+                <div class="content-feature">
+                    <i class="fa-sharp fa-solid fa-microchip" style="margin-right: 32px;"></i>
+                    <div class="main-content-feature">
+                        <p class="head-feature">Future Tech Expo</p>
+                        <p class="text-feature">Showcase exhibitors displaying the latest advancements in technology and
+                            gadgets.
+                        </p>
+                    </div>
+                </div>
+                <div class="content-feature">
+                    <i class="fa-solid fa-comments" style="margin-right: 25px;"></i>
+                    <div class="main-content-feature">
+                        <p class="head-feature">Interactive Q&A Sessions</p>
+                        <p class="text-feature">Allow attendees to ask questions and interact with
+                            speakers in real-time.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div id="testimonials">
+        <div class="section-heading">TESTIMONIALS</div>
+        <div class="test-container">
+            <div class="card1" style="width: 55rem; display: flex; margin-bottom: 50px;">
+                <div class="card">
+                    <img src="./assets/performers/pic11.png" style="width: 28rem; height: 20rem;" class="card-img-top"
+                        alt="...">
+                </div>
+                <div class="card-body" style="width: 18rem;">
+                    <p class="card-text">Attending TechVolution 2024 was an enlightening journey into the possibilities
+                        of tomorrow. The innovative ideas presented by industry leaders ignited my imagination and
+                        fueled my passion for technology. This conference is a must-attend for anyone seeking to stay
+                        ahead in the rapidly evolving tech landscape.<br><br>
+                        - Jason Patel, Software Developer</p>
+                </div>
+            </div>
+            <div class="below-test">
+                <div class="card" style="width: 18rem;">
+                    <img src="./assets/performers/pic-1.webp" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">"TechVolution 2024 was nothing short of extraordinary. The convergence of
+                            groundbreaking technologies and visionary thinkers created an electrifying atmosphere that
+                            sparked countless conversations and collaborations. It's events like these that redefine the
+                            boundaries of what's possible and inspire us to push the limits of innovation."<br><br>
+                            - Michael Thompson, IT Consultant</p>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="./assets/performers/pic-2.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">"At TechVolution 2024, I witnessed the future unfold before my eyes. The
+                            cutting-edge technologies showcased were not only impressive but also deeply insightful. It
+                            was an exhilarating experience that left me inspired and eager to embrace the advancements
+                            that await us."<br><br>
+                            - Sarah Rodriguez, Tech Enthusiast</p>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="./assets/performers/pic-3.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">"TechVolution 2024 exceeded all my expectations. From AI-driven solutions
+                            to mind-bending virtual reality experiences, every aspect of the conference was meticulously
+                            curated to showcase the transformative power of technology. I left with a renewed sense of
+                            optimism and a deeper understanding of the limitless potential of innovation."<br><br>
+                            - Emily Chen, Tech Entrepreneur</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="event">
+        <div class="section-heading">EVENTS</div>
+        <section class="design-section">
+            <div class="timeline">
+                <div class="timeline-empty">
+                </div>
+                <div class="timeline-middle">
+                    <div class="timeline-circle"></div>
+                </div>
+                <div class="timeline-component timeline-content">
+                    <h3>Day 1</h3>
+                    <p>Opening Ceremony & Keynote Address</p>
+                    <p>Exhibition Hall Opens</p>
+                </div>
+                <div class="timeline-component timeline-content">
+                    <h3>Day 1</h3>
+                    <p>Panel Discussions on Emerging Technologies</p>
+                    <p>Startup Pitch Competition</p>
+                </div>
+                <div class="timeline-middle">
+                    <div class="timeline-circle"></div>
+                </div>
+                <div class="timeline-empty">
+                </div>
+
+                <div class="timeline-empty">
+                </div>
+                <div class="timeline-middle">
+                    <div class="timeline-circle"></div>
+                </div>
+                <div class=" timeline-component timeline-content">
+                    <h3>Day 2</h3>
+                    <p>Workshops on AI, Robotics, and Blockchain</p>
+                    <p>Tech Talks on Future Trends and Innovations</p>
+                </div>
+                <div class="timeline-component timeline-content">
+                    <h3>Day 2</h3>
+                    <p>Networking Lunch</p>
+                    <p>Virtual Reality Experience Zone</p>
+                </div>
+                <div class="timeline-middle">
+                    <div class="timeline-circle"></div>
+                </div>
+                <div class="timeline-empty">
+                </div>
+                <div class="timeline-empty">
+                </div>
+
+                <div class="timeline-middle">
+                    <div class="timeline-circle"></div>
+                </div>
+                <div class=" timeline-component timeline-content">
+                    <h3>Day 3</h3>
+                    <p>Deep Dive Sessions on Quantum Computing and Space Tech</p>
+                    <p>Fireside Chats with Industry Leaders</p>
+                </div>
+                <div class="timeline-component timeline-content">
+                    <h3>Day 3</h3>
+                    <p>Awards Ceremony & Closing Remarks</p>
+                    <p>Networking Reception</p>
+                </div>
+                <div class="timeline-middle">
+                    <div class="timeline-circle"></div>
+                </div>
+                <div class="timeline-empty">
+                </div>
+            </div>
+        </section>
+    </div>
+    <div id="gallery1">
+        <div class="section-heading">GALLERY</div>
+        <div class="gallery-container">
+            <figure>
+                <img src="./assets/gallery/pic5.jpg" alt="" />
+            </figure>
+            <figure>
+                <img src="./assets/gallery/pic9.jpg" alt="" />
+            </figure>
+            <figure>
+                <img src="./assets/gallery/pic2.jpg" alt="" />
+            </figure>
+            <figure>
+                <img src="./assets/gallery/pic3.jpg" alt="" />
+            </figure>
+            <figure>
+                <img src="./assets/gallery/pic7.jpg" alt="" />
+            </figure>
+            <figure>
+                <img src="./assets/gallery/pic6.jpg" alt="" />
+            </figure>
+            <figure>
+                <img src="./assets/gallery/pic4.jpg" alt="" />
+            </figure>
+            <figure>
+                <img src="./assets/gallery/pic8.jpg" alt="" />
+            </figure>
+            <figure>
+                <img src="./assets/gallery/pic1.jpg" alt="" />
+            </figure>
+            <figure>
+                <img src="./assets/gallery/pic10.jpg" alt="" />
+            </figure>
+            <figure>
+                <img src="./assets/gallery/pic11.jpg" alt="" />
+            </figure>
+            <figure>
+                <img src="./assets/gallery/pic12.jpg" alt="" />
+            </figure>
+        </div>
+    </div>
+    <div id="timeline">
+        <div class="section-heading">TIMELINE</div>
+        <section class="design-section">
+            <div class="timeline">
+                <div class="timeline-empty">
+                    <div class="timeline-year">
+                        <p>2019</p>
+                    </div>
+                </div>
+                <div class="timeline-middle">
+                    <div class="timeline-circle"></div>
+                </div>
+                <div class="timeline-component timeline-content1">
+                    <h3>Inception</h3>
+                    <p>TechVolution was founded with the vision of creating a platform to explore and showcase the
+                        latest advancements in technology.</p>
+                    <p>The inaugural planning committee gathered to establish the event's mission and objectives.
+                    </p>
+                </div>
+
+                <div class="timeline-empty">
+                    <div class="timeline-year">
+                        <p>2020</p>
+                    </div>
+                </div>
+                <div class="timeline-middle">
+                    <div class="timeline-circle"></div>
+                </div>
+                <div class="timeline-component timeline-content">
+                    <h3>Launch</h3>
+                    <p>TechVolution hosted its first-ever conference in Silicon Valley, California, attracting tech
+                        enthusiasts, entrepreneurs, and industry leaders from around the world.
+                    </p>
+                    <p>Keynote speakers included pioneers in AI, blockchain, and robotics, setting the tone for future
+                        events.
+                    </p>
+                </div>
+
+
+                <div class="timeline-empty">
+                    <div class="timeline-year">
+                        <p>2021</p>
+                    </div>
+                </div>
+                <div class="timeline-middle">
+                    <div class="timeline-circle"></div>
+                </div>
+                <div class=" timeline-component timeline-content">
+                    <h3>Expansion and Innovation</h3>
+                    <p>Due to the overwhelming success of the inaugural event, TechVolution expanded to include
+                        satellite events in major tech hubs such as New York City, London, and Tokyo.</p>
+                    <p>The conference introduced interactive workshops, allowing attendees to get hands-on experience
+                        with emerging technologies.
+                    </p>
+                </div>
+
+                <div class="timeline-empty">
+                    <div class="timeline-year">
+                        <p>2022</p>
+                    </div>
+                </div>
+                <div class="timeline-middle">
+                    <div class="timeline-circle"></div>
+                </div>
+                <div class="timeline-component timeline-content">
+                    <h3>Community Building</h3>
+                    <p>TechVolution focused on community building, launching an online platform for networking and
+                        collaboration among attendees, speakers, and sponsors. </p>
+                    <p>The event featured diverse panels and discussions on topics like sustainability in tech and the
+                        future of work.
+                    </p>
+                </div>
+
+                <div class="timeline-empty">
+                    <div class="timeline-year">
+                        <p>2023</p>
+                    </div>
+                </div>
+                <div class="timeline-middle">
+                    <div class="timeline-circle"></div>
+                </div>
+                <div class=" timeline-component timeline-content">
+                    <h3>Global Reach</h3>
+                    <p>TechVolution went fully global, hosting simultaneous events in multiple continents, including
+                        Asia, Europe, and North America.
+                    </p>
+                    <p>Partnerships with leading tech companies and startups enhanced the event's offerings and
+                        attracted a wider audience.
+                    </p>
+                </div>
+
+                <div class="timeline-empty">
+                    <div class="timeline-year">
+                        <p>2024</p>
+                    </div>
+                </div>
+                <div class="timeline-middle">
+                    <div class="timeline-circle"></div>
+                </div>
+                <div class="timeline-component timeline-content">
+                    <h3>Milestones and Achievements</h3>
+                    <p>TechVolution 2024 marks a significant milestone, celebrating five years of innovation,
+                        collaboration, and technological advancement.
+                    </p>
+                    <p>The conference showcases breakthroughs in quantum computing, biotechnology, and space
+                        exploration,
+                        reaffirming its position as a premier event in the tech industry.
+                    </p>
+                    <p>TechVolution receives recognition for its impact on fostering innovation and shaping the future
+                        of technology.
+                    </p>
+                </div>
+
+            </div>
+        </section>
+    </div>
+
+    <div id="form">
+        <div class="section-heading">REGISTRATION</div>
+        <div class="form-container">
+            <form class="register" action="" method="post">
+                <div class="Left">
+                    <fieldset>
+                        <legend>Personal Information</legend>
+                        <div class="form-group">
+                            <label for="name">First Name:</label>
+                            <input type="text" class="form-control" placeholder="First name" aria-label="First name">
+                        </div>
+                        <div class="form-group">
+                            <label for="dob">Last Name:</label>
+                            <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
+                        </div>
+                        <div class="form-group">
+                            <label for="dob">Date of Birth:</label>
+                            <input type="date" class="form-control" id="dob" name="dob" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Gender:</label>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="gender" id="male" value="male"
+                                    required>
+                                <label class="form-check-label" for="male">Male</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="gender" id="female" value="female">
+                                <label class="form-check-label" for="female">Female</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="gender" id="nonBinary"
+                                    value="nonBinary">
+                                <label class="form-check-label" for="nonBinary">Non-binary</label>
+                            </div>
+                        </div>
+                    </fieldset>
+                </div>
+                <div class="right">
+                    <fieldset>
+                        <legend>Contact Details</legend>
+                        <div class="form-group">
+                            <label for="email">Email Address:</label>
+                            <input type="email" class="form-control" id="email" name="email"
+                                placeholder="example@gmail.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number:</label>
+                            <input type="tel" class="form-control" id="phone" name="phone" placeholder="XXX-XXX-XXXX"
+                                required>
+                        </div>
+
+                    </fieldset>
+                </div>
+                <div class="Left">
+                    <fieldset>
+                        <legend>Address</legend>
+
+                        <div class="form-group">
+                            <label for="address">Address:</label>
+                            <input type="text" class="form-control" id="address" name="address"
+                                placeholder="Street Address" required>
+                            <input type="text" class="form-control mt-2" id="city" name="city" placeholder="City"
+                                required>
+                            <select class="form-control mt-2" id="state" name="state" required>
+                                <option value="" disabled selected>Select State</option>
+                                <!-- Add options for states here -->
+                            </select>
+                            <input type="text" class="form-control mt-2" id="zip" name="zip" placeholder="Zip Code"
+                                required>
+                        </div>
+                    </fieldset>
+                </div>
+                <div class="right">
+                    <fieldset>
+                        <legend>Additional Information</legend>
+                        <div class="form-group">
+                            <label>Event Preferences:</label>
+                            <!-- Add checkboxes or select options for event preferences here -->
+                            <select class="form-control mt-2" id="event" name="event" required>
+                                <option value="" disabled selected>Select Event Preferences</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="dietaryRestrictions">Dietary Restrictions:</label>
+                            <textarea class="form-control" id="dietaryRestrictions" placeholder="Enter your text"
+                                name="dietaryRestrictions"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="tshirtSize">T-shirt Size:</label>
+                            <select class="form-control" id="tshirtSize" name="tshirtSize" required>
+                                <option value="" disabled selected>Select Size</option>
+                                <option value="S">Small</option>
+                                <option value="M">Medium</option>
+                                <option value="L">Large</option>
+                                <option value="XL">Extra Large</option>
+                            </select>
+                        </div>
+                    </fieldset>
+                    <button type="submit" class="submit btn btn-lg mt-3">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div id="prizes">
+        <div class="section-heading">PRIZES</div>
+        <div class="body1">
+            <section>
+                <div class="custom-container">
+                    <div class="custom-card">
+                        <div class="custom-content">
+                            <h2 class="prize-card-head">#1</h2>
+                            <div class="imgBx">
+                                <img src="./assets/awards/first.png">
+                            </div>
+                            <div class="contentBx">
+                                <h3>Prizes worth: 1,00,000</h3>
+                            </div>
+                        </div>
+                        <div class="sci">
+                            <button type="button" class="btn btn-outline-warning">View Details</button>
+                        </div>
+                    </div>
+                    <div class="custom-card">
+                        <div class="custom-content">
+                            <h2 class="prize-card-head">#2</h2>
+                            <div class="imgBx">
+                                <img src="./assets/awards/second.png">
+                            </div>
+                            <div class="contentBx">
+                                <h3>Prizes worth: 50,000</h3>
+                            </div>
+                        </div>
+                        <div class="sci">
+                            <button type="button" class="btn btn-outline-warning">View Details</button>
+                        </div>
+                    </div>
+                    <div class="custom-card">
+                        <div class="custom-content">
+                            <h2 class="prize-card-head">#3</h2>
+                            <div class="imgBx">
+                                <img src="./assets/awards/third.png">
+                            </div>
+                            <div class="contentBx">
+                                <h3>Prizes worth: 25,000</h3>
+                            </div>
+                        </div>
+                        <div class="sci">
+                            <button type="button" class="btn btn-outline-warning">View Details</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-1">
+                <a class="navbar-brand" href="#">
+                    <img src="./assets/png-logo.png" alt="Logo" width="250" height="74"
+                        class="d-inline-block align-text-top">
+                </a>
+                <p class="foot-text">TechVolution 2024, a convergence of minds shaping the future. It's not just a
+                    conference; it's a
+                    journey through the evolution of technology. From cutting-edge AI to revolutionary biotech, we're
+                    redefining what's possible.</p>
+                <div class="social-links">
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-twitter"></i></a>
+                    <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </div>
+            <div class="footer-2 foot">
+                <ul>
+                    <h3>Company</h3>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Events</a></li>
+                    <li><a href="#">Carrers</a></li>
+                    <li><a href="#">Volunteer</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-3 foot">
+                <ul>
+                    <h3>Support</h3>
+                    <li><a href="#">Return Policy</a></li>
+                    <li><a href="#">Terms of Use</a></li>
+                    <li><a href="#">Discrimination Policy</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="hr-line">
+            <hr>
+        </div>
+        <div class="copyright-container">
+            <div class="copy-foot">
+                <div class="pages">
+                    <a href="#">Conditions of Use</a>
+                    <a href="#">Privacy Notice</a>
+                    <a href="#">Your Ads Privacy Choices</a>
+                </div>
+                <div class="copyright">
+                    <p>© 2025, Pratul Johari, Inc. or its affiliates</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+        </script>
+    <!-- Gallery -->
+    <script>var gallery = document.querySelector('#gallery');
+        var getVal = function (elem, style) { return parseInt(window.getComputedStyle(elem).getPropertyValue(style)); };
+        var getHeight = function (item) { return item.querySelector('.content').getBoundingClientRect().height; };
+        var resizeAll = function () {
+            var altura = getVal(gallery, 'grid-auto-rows');
+            var gap = getVal(gallery, 'grid-row-gap');
+            gallery.querySelectorAll('.gallery-item').forEach(function (item) {
+                var el = item;
+                el.style.gridRowEnd = "span " + Math.ceil((getHeight(item) + gap) / (altura + gap));
+            });
+        };
+        gallery.querySelectorAll('img').forEach(function (item) {
+            item.classList.add('byebye');
+            if (item.complete) {
+                console.log(item.src);
+            }
+            else {
+                item.addEventListener('load', function () {
+                    var altura = getVal(gallery, 'grid-auto-rows');
+                    var gap = getVal(gallery, 'grid-row-gap');
+                    var gitem = item.parentElement.parentElement;
+                    gitem.style.gridRowEnd = "span " + Math.ceil((getHeight(gitem) + gap) / (altura + gap));
+                    item.classList.remove('byebye');
+                });
+            }
+        });
+        window.addEventListener('resize', resizeAll);
+        gallery.querySelectorAll('.gallery-item').forEach(function (item) {
+            item.addEventListener('click', function () {
+                item.classList.toggle('full');
+            });
+        });
+    </script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>$(() => {
+            let stickyTop = 0,
+                scrollTarget = false;
+
+            let timeline = $(".timeline__nav"),
+                items = $("li", timeline),
+                milestones = $(".timeline__section .milestone"),
+                offsetTop = parseInt(timeline.css("top"));
+
+            const TIMELINE_VALUES = {
+                start: 190,
+                step: 30
+            };
+
+            $(window)
+                .resize(function () {
+                    timeline.removeClass("fixed");
+
+                    stickyTop = timeline.offset().top - offsetTop;
+
+                    $(window).trigger("scroll");
+                })
+                .trigger("resize");
+
+            $(window)
+                .scroll(function () {
+                    if ($(window).scrollTop() > stickyTop) {
+                        timeline.addClass("fixed");
+                    } else {
+                        timeline.removeClass("fixed");
+                    }
+                })
+                .trigger("scroll");
+
+            items.find("span").click(function () {
+                let li = $(this).parent(),
+                    index = li.index(),
+                    milestone = milestones.eq(index);
+
+                if (!li.hasClass("active") && milestone.length) {
+                    scrollTarget = index;
+
+                    let scrollTargetTop = milestone.offset().top - 80;
+
+                    $("html, body").animate(
+                        { scrollTop: scrollTargetTop },
+                        {
+                            duration: 400,
+                            complete: function complete() {
+                                scrollTarget = false;
+                            }
+                        }
+                    );
+                }
+            });
+
+            $(window)
+                .scroll(function () {
+                    let viewLine = $(window).scrollTop() + $(window).height() / 3,
+                        active = -1;
+
+                    if (scrollTarget === false) {
+                        milestones.each(function () {
+                            if ($(this).offset().top - viewLine > 0) {
+                                return false;
+                            }
+
+                            active++;
+                        });
+                    } else {
+                        active = scrollTarget;
+                    }
+
+                    timeline.css(
+                        "top",
+                        -1 * active * TIMELINE_VALUES.step + TIMELINE_VALUES.start + "px"
+                    );
+
+                    items.filter(".active").removeClass("active");
+
+                    items.eq(active != -1 ? active : 0).addClass("active");
+                })
+                .trigger("scroll");
+        });
+    </script>
+</body>
+
+</html>
