@@ -9,63 +9,120 @@
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <title>Document</title>
     <style>
-        .card1,
-        .below-test {
-            display: flex;
-        }
-
+        /* Testimonials Section */
         #testimonials {
             background-color: #090909;
+            padding: 50px;
+            color: white;
+        }
+
+        .section-heading {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .test-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        /* Testimonial Card */
+        .testimonial-card {
+            flex: 0 0 calc(33.33% - 20px);
+            margin-bottom: 20px;
+            background-color: #1a1a1a;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .testimonial-card .card {
+            width: 50%;
+            float: left;
+        }
+
+        .testimonial-card .card-body {
+            width: 50%;
+            float: left;
+        }
+
+        .card-img-top {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
+
+        .card-text {
+            color: white;
+            padding: 20px;
+        }
+
+        /* Media Query for Responsive Design */
+        @media screen and (max-width: 768px) {
+            .testimonial-card {
+                flex: 0 0 calc(100% - 20px);
+            }
+
+            .testimonial-card .card {
+                width: 100%;
+            }
+
+            .testimonial-card .card-body {
+                width: 100%;
+            }
         }
     </style>
 </head>
 
 <body>
     <div id="testimonials">
+        <div class="section-heading">TESTIMONIALS</div>
         <div class="test-container">
-            <div class="card1" style="width: 50rem; display: flex;">
-                <img src="./assets/performers/pic-1.webp" style="width: 18rem;" class="card-img-top" alt="...">
+            <div class="testimonial-card">
+                <div class="card">
+                    <img src="./assets/performers/pic-1.webp" class="card-img-top" alt="...">
+                </div>
                 <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card's content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                    <p class="card-text">"TechVolution 2024 was nothing short of extraordinary. The convergence of
+                        groundbreaking technologies and visionary thinkers created an electrifying atmosphere that
+                        sparked countless conversations and collaborations. It's events like these that redefine the
+                        boundaries of what's possible and inspire us to push the limits of innovation."<br><br>
+                        - Michael Thompson, IT Consultant
+                    </p>
                 </div>
             </div>
-            <div class="below-test">
-                <div class="card" style="width: 18rem;;">
-                    <img src="./assets/performers/pic-1.webp" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the
-                            card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
+
+            <div class="testimonial-card">
+                <div class="card">
+                    <img src="./assets/performers/pic-2.jpg" class="card-img-top" alt="...">
                 </div>
-                <div class="card" style="width: 18rem;;">
-                    <img src="./assets/performers/pic-1.webp" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the
-                            card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
+                <div class="card-body">
+                    <p class="card-text">"At TechVolution 2024, I witnessed the future unfold before my eyes. The
+                        cutting-edge technologies showcased were not only impressive but also deeply insightful. It
+                        was an exhilarating experience that left me inspired and eager to embrace the advancements
+                        that await us."<br><br>
+                        - Sarah Rodriguez, Tech Enthusiast
+                    </p>
                 </div>
-                <div class="card" style="width: 18rem;;">
-                    <img src="./assets/performers/pic-1.webp" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the
-                            card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
+            </div>
+
+            <div class="testimonial-card">
+                <div class="card">
+                    <img src="./assets/performers/pic-3.jpg" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body">
+                    <p class="card-text">"TechVolution 2024 exceeded all my expectations. From AI-driven solutions
+                        to mind-bending virtual reality experiences, every aspect of the conference was meticulously
+                        curated to showcase the transformative power of technology. I left with a renewed sense of
+                        optimism and a deeper understanding of the limitless potential of innovation."<br><br>
+                        - Emily Chen, Tech Entrepreneur
+                    </p>
                 </div>
             </div>
         </div>
     </div>
+
 </body>
 
 </html>

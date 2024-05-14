@@ -304,57 +304,69 @@ html {
     -webkit-background-clip: text; 
 }
 
-
-/* TESTIMONIALS */
-
+/* Testimonials Section */
 #testimonials {
     background-color: #090909;
-    padding: 0 50px 50px;
+    padding: 50px;
     color: white;
 }
-.card-text {
-    color: white;
 
-}
-.social-links {
-    padding-left: 20px;
-    font-size: 25px;
-}
-
-.social-links a i {
-    text-decoration: none;
-    color: white;
-}
-.social-links i {
-    padding-left: 10px;
-}
-
-.card-body {
-    background-color: #090909;    
-    padding: 20px;
+.section-heading {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
 }
 
 .test-container {
-    padding: 50px 0 70px;
-    justify-content: center;
-    margin: 0 185px;
-    width: 60rem;
-}
-.card1,
-.below-test {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
-#testimonials {
-    background-color: #090909;
+/* Testimonial Card */
+.testimonial-card {
+    flex: 0 0 calc(33.33% - 20px);
+    margin-bottom: 20px;
+    background-color: #1a1a1a;
+    border-radius: 10px;
+    overflow: hidden;
 }
 
-.card,.card1 {
-    border: none;
-    -webkit-box-shadow: 5px 5px 10px #1a1a1a, -5px -5px 10px #242424;
-    box-shadow: 5px 5px 10px #1a1a1a, -5px -5px 10px #242424;
+.testimonial-card .card {
+    width: 50%;
+    float: left;
 }
 
+.testimonial-card .card-body {
+    width: 50%;
+    float: left;
+}
+
+.card-img-top {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.card-text {
+    color: white;
+    padding: 20px;
+}
+
+/* Media Query for Responsive Design */
+@media screen and (max-width: 768px) {
+    .testimonial-card {
+        flex: 0 0 calc(100% - 20px);
+    }
+
+    .testimonial-card .card {
+        width: 80%;
+    }
+
+    .testimonial-card .card-body {
+        width: 80%;
+    }
+}
 
 /* Event */
 
@@ -948,20 +960,6 @@ hr {
         font-size: 40px;
     }
 }
-/* Testimonials */
-@media screen and (max-width: 768px) {
-    .card1 {
-        width: 100%; /* Set card width to full width on smaller screens */
-    }
-
-    .below-test {
-        flex-direction: column; /* Stack cards vertically on smaller screens */
-    }
-
-    .card {
-        width: 100%; /* Set card width to full width on smaller screens */
-    }
-}
 
 /* Events */
 @media screen and (max-width: 768px) {
@@ -987,28 +985,6 @@ hr {
     .form-group {
         width: 100%; /* Set form group width to full width on smaller screens */
     }
-    .min {
-        width: 75vw;
-    }
-    .card1{
-        width: 83vw;
-    }
-    .card img {
-        width:34vw;
-    }
-    .card-body {
-        width: 18vw;
-    }
+    
 }
-.min {
-    width: 21vw;
-}
-.card1{
-    width: 63vw;
-}
-.card img {
-    width:34vw;
-}
-.card-body {
-    width: 18rem;
-}
+
