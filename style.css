@@ -38,7 +38,8 @@ html {
 .home-container {
 	position: relative;
 	height: 85vh;
-	overflow: hidden;background: url('./assets/newBanner.png');
+	overflow: hidden;
+    background: url('./assets/newBanner.png');
     background-size: cover;
 }
 
@@ -850,4 +851,17 @@ hr {
     color: #feb43c;
     font-size: 50px;
     padding-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+    .middle-image-container img {
+        width: 50vw;
+    }
+    .home-container {
+        position: relative;
+        height: 85vh;
+        overflow: hidden;
+        background: url('./assets/newBanner1.png');
+        background-size: cover;
+    }
 }
