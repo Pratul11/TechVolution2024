@@ -853,15 +853,122 @@ hr {
     padding-bottom: 20px;
 }
 
+/* For screens smaller than 768px (tablets) */
 @media (max-width: 768px) {
-    .middle-image-container img {
-        width: 50vw;
+    .content {
+        left: 5%;
+        right: 5%;
     }
-    .home-container {
-        position: relative;
-        height: 85vh;
-        overflow: hidden;
-        background: url('./assets/newBanner1.png');
-        background-size: cover;
+
+    .about-content-container {
+        flex-direction: column;
+        padding: 0 20px;
+    }
+
+    .leftside-container,
+    .rightside-container {
+        width: 100%;
+    }
+
+    .middle-image-container img {
+        width: 100%;
+    }
+}
+
+/* For screens smaller than 576px (phones) */
+@media (max-width: 576px) {
+    .content h1 {
+        font-size: 3rem;
+    }
+
+    .about-content-container {
+        padding: 0 10px;
+    }
+
+    .section-heading {
+        font-size: 40px;
+    }
+
+    .left-container-1,
+    .right-container-1 {
+        width: 100%;
+    }
+}
+/* For screens smaller than 992px (medium devices) */
+@media (max-width: 992px) {
+    .features-container {
+        flex-direction: column;
+        padding: 50px 20px;
+    }
+
+    .left-feature,
+    .right-feature {
+        width: 100%;
+        padding: 0;
+    }
+
+    .left-feature h2 {
+        font-size: 40px;
+    }
+}
+
+/* For screens smaller than 768px (tablets) */
+@media (max-width: 768px) {
+    .features-container {
+        padding: 30px 20px;
+    }
+
+    .left-feature h2 {
+        font-size: 30px;
+    }
+
+    .content-feature {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .content-feature i {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+}
+
+/* For screens smaller than 576px (phones) */
+@media (max-width: 576px) {
+    .features-container {
+        padding: 20px;
+    }
+
+    .left-feature h2 {
+        font-size: 26px;
+    }
+
+    .section-heading {
+        font-size: 40px;
+    }
+}
+/* Testimonials */
+@media screen and (max-width: 768px) {
+    .card1 {
+        width: 100%; /* Set card width to full width on smaller screens */
+    }
+
+    .below-test {
+        flex-direction: column; /* Stack cards vertically on smaller screens */
+    }
+
+    .card {
+        width: 100%; /* Set card width to full width on smaller screens */
+    }
+}
+
+/* Events */
+@media screen and (max-width: 768px) {
+    .timeline {
+        overflow-x: auto; /* Add horizontal scroll for small screens */
+    }
+
+    .timeline-component {
+        width: 100%; /* Ensure components fill the timeline width */
     }
 }
