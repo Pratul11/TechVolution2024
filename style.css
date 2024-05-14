@@ -988,3 +988,48 @@ hr {
         width: 100%; /* Set form group width to full width on smaller screens */
     }
 }
+
+
+/* Testimonials */
+
+#testimonials {
+    background-color: #090909;
+    padding: 50px 20px; /* Reduce padding for smaller screens */
+    color: white;
+}
+
+.test-container {
+    padding: 50px 0; /* Remove bottom padding for smaller screens */
+    display: flex;
+    flex-direction: column; /* Stack cards vertically */
+    align-items: center;
+}
+
+.card1,
+.below-test {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 50px; /* Add margin-bottom for spacing between cards */
+    flex-direction: column; /* Stack card content vertically */
+}
+
+.card {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 20px; /* Add margin-bottom for spacing between cards */
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.card1 .card {
+    display: flex;
+    flex-direction: column;
+}
+
+.card1 .card img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
