@@ -972,3 +972,18 @@ hr {
         width: 100%; /* Ensure components fill the timeline width */
     }
 }
+/* Form */
+@media screen and (max-width: 768px) {
+    .register {
+        grid-template-columns: 100%; /* Change to single column layout on smaller screens */
+    }
+
+    .Left, .right {
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    .form-group {
+        width: 100%; /* Set form group width to full width on smaller screens */
+    }
+}
