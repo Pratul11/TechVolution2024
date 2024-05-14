@@ -987,6 +987,28 @@ hr {
     .form-group {
         width: 100%; /* Set form group width to full width on smaller screens */
     }
+    .min {
+        width: 75vw;
+    }
+    .card1{
+        width: 83vw;
+    }
+    .card img {
+        width:34vw;
+    }
+    .card-body {
+        width: 18vw;
+    }
 }
-
-
+.min {
+    width: 21vw;
+}
+.card1{
+    width: 63vw;
+}
+.card img {
+    width:34vw;
+}
+.card-body {
+    width: 18rem;
+}
