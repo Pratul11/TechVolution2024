@@ -694,6 +694,17 @@ footer {
     padding-top: 30px;
     width: 15vw;
 }
+
+@media (max-width: 768px) {
+    .foot {
+        padding-top: 80px;
+        width: 85vw;
+    }
+    .footer-container {
+        display: grid;
+        color: white;
+    }
+}
 .foot ul li {
     list-style-type: none;
 
