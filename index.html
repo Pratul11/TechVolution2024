@@ -58,7 +58,7 @@
                     </li>
                 </ul>
                 <form class="d-flex" role="search">
-                    <button class="btn" type="submit">Register Now</button>
+                    <button class="btn" type="submit" id="register-btn" onclick="register()">Register Now</button>
                 </form>
             </div>
         </div>
@@ -71,7 +71,7 @@
         </video> -->
         <div class="content">
             <h1>TechVolution 2024<br>Shaping Tomorrow,<br>Today</h1>
-            <button type="button" class="btn btn-lg mt-3">Register Now</button>
+            <button type="button" class="btn btn-lg mt-3" id="register-btn" onclick="register()">Register Now</button>
         </div>
     </div>
     <div id="about">
@@ -753,7 +753,18 @@
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
         </script>
     <!-- Gallery -->
-    <script>var gallery = document.querySelector('#gallery');
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const registerButtons = document.querySelectorAll('#register-btn');
+            function redirectToFormPage() {
+                window.location.href = './form.html';
+            }
+            registerButtons.forEach(button => {
+                button.addEventListener('click', redirectToFormPage);
+            });
+        });
+
+        var gallery = document.querySelector('#gallery');
         var getVal = function (elem, style) { return parseInt(window.getComputedStyle(elem).getPropertyValue(style)); };
         var getHeight = function (item) { return item.querySelector('.content').getBoundingClientRect().height; };
         var resizeAll = function () {
@@ -871,6 +882,9 @@
                 })
                 .trigger("scroll");
         });
+        function register() {
+            window.location.href = "./form1.html";
+        }
     </script>
 </body>
 

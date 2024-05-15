@@ -20,7 +20,18 @@ html {
 }
 
 /* NAVBAR */
-
+/* .content .btn a:hover,
+.d-flex .btn a{
+    
+    text-decoration: none;
+	color: #ebbf46;
+}
+.d-flex .btn a:hover,
+.content .btn a{
+    text-decoration: none;
+    
+    color: #090909;
+} */
 .d-flex .btn,
 .content .btn:hover{
 	border-color: #ebbf46;
@@ -311,11 +322,11 @@ html {
     color: white;
 }
 
-.section-heading {
+/* .section-heading {
     font-size: 24px;
     font-weight: bold;
     margin-bottom: 20px;
-}
+} */
 
 .test-container {
     display: flex;
@@ -729,6 +740,11 @@ footer {
 
 hr {
     margin: 10vh 15vw 0;
+    color: white;
+}
+
+.social-links a{
+    text-decoration: none;
     color: white;
 }
 

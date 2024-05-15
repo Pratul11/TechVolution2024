@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechVolution 2024 - Registration Form</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="card" id="welcome" style="display: block;">
+            <h1>TechVolution 2024</h1>
+            <p>Thank you for choosing to register with us. Please fill out the following form to complete your
+                registration.</p>
+            <button type="button" data-action="next">Start Registration</button>
+        </div>
+        <div class="card" id="personal-info" style="display:none;">
+            <h2>Personal Information</h2>
+            <form id="personal-info-form">
+                <input type="text" id="firstname" placeholder="First Name" required>
+                <input type="text" id="lastname" placeholder="Last Name" required>
+                <select id="gender" required>
+                    <option value="" disabled selected>Select Gender</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select>
+                <input type="date" id="dob" required min="1900-01-01" max="2020-12-31">
+                <button type="button" data-action="prev">Back</button>
+                <button type="button" data-action="next">Next</button>
+            </form>
+        </div>
+        <div class="card" id="add-info" style="display:none;">
+            <h2>Address</h2>
+            <form id="address-info-form">
+                <input type="text" id="street" placeholder="Street Address" required>
+                <input type="text" id="city" placeholder="City" required>
+                <input type="text" id="state" placeholder="State" required>
+                <input type="text" id="pincode" placeholder="Pincode" required>
+                <button type="button" data-action="prev">Back</button>
+                <button type="button" data-action="next">Next</button>
+            </form>
+        </div>
+        <div class="card" id="contact-info" style="display:none;">
+            <h2>Contact Information</h2>
+            <form id="contact-info-form">
+                <input type="text" id="email" placeholder="Email Address" required>
+                <input type="text" id="phone" placeholder="Phone Number" required>
+                <button type="button" data-action="prev">Back</button>
+                <button type="button" data-action="next">Next</button>
+            </form>
+        </div>
+        <div class="card" id="event-preferences" style="display:none;">
+            <h2>Event Preferences</h2>
+            <form id="event-preferences-form">
+                <label><input type="checkbox" name="event" value="workshop">Workshop</label>
+                <label><input type="checkbox" name="event" value="seminar">Seminar</label>
+                <label><input type="checkbox" name="event" value="conference">Conference</label><br><br>
+                <textarea id="dietaryRestrictions" name="dietaryRestrictions"></textarea>
+                <select id="tshirt-size">
+                    <option value="" disabled selected>Select T-shirt Size</option>
+                    <option value="s">S</option>
+                    <option value="m">M</option>
+                    <option value="l">L</option>
+                    <option value="xl">XL</option>
+                </select>
+                <button type="button" data-action="prev">Back</button>
+                <button type="button" data-action="next">Submit</button>
+            </form>
+        </div>
+        <div class="card" id="thankyou" style="display:none;">
+            <div class="cbox">
+                <input type="checkbox" id="cbtest" checked />
+                <label for="cbtest" class="check-box"></label>
+            </div>
+            <div class="thank-you-message">
+                Thank you for your registration!
+            </div>
+            <div class="processing-message">
+                We are processing your request. You will receive an email shortly.
+            </div>
+
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const cards = document.querySelectorAll('.card');
+            const prevButtons = document.querySelectorAll('[data-action="prev"]');
+            const nextButtons = document.querySelectorAll('[data-action="next"]');
+            const submitButton = document.querySelector('[type="submit"]');
+            let currentCardIndex = 0;
+
+            // Card
+            function showCard(index) {
+                cards.forEach((card, i) => {
+                    if (i === index) {
+                        card.style.display = 'block';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+            }
+
+            // Previous button
+            function prevStep() {
+                if (currentCardIndex > 0) {
+                    currentCardIndex--;
+                    showCard(currentCardIndex);
+                }
+            }
+
+            // Next button
+            function nextStep() {
+                if (currentCardIndex < cards.length - 1) {
+                    currentCardIndex++;
+                    showCard(currentCardIndex);
+                }
+            }
+
+            prevButtons.forEach(button => {
+                button.addEventListener('click', prevStep);
+            });
+
+            nextButtons.forEach(button => {
+                button.addEventListener('click', nextStep);
+            });
+        });
+
+    </script>
+</body>
+
+</html>
